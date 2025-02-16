@@ -1,0 +1,53 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "pnpm install",
+      "name": "Installing Dependencies"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "dev": {
+      "name": "dev",
+      "command": "pnpm dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 4444
+      }
+    },
+    "build": {
+      "name": "build",
+      "command": "pnpm build"
+    },
+    "lint": {
+      "name": "lint",
+      "command": "pnpm lint"
+    },
+    "lint:fix": {
+      "name": "lint:fix",
+      "command": "pnpm lint:fix"
+    },
+    "preview": {
+      "name": "preview",
+      "command": "pnpm preview"
+    },
+    "link-sequence": {
+      "name": "link-sequence",
+      "command": "pnpm link-sequence"
+    },
+    "unlink-sequence": {
+      "name": "unlink-sequence",
+      "command": "pnpm unlink-sequence"
+    },
+    "clear:vite:cache": {
+      "name": "clear:vite:cache",
+      "command": "pnpm clear:vite:cache"
+    },
+    "postinstall": {
+      "name": "postinstall",
+      "command": "pnpm postinstall"
+    }
+  }
+}
