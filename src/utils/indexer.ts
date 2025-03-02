@@ -85,9 +85,12 @@ export function randomName() {
   const wordlistSize = 2048
   const words = ethers.wordlists.en
 
-  const randomEmoji = DEVICE_EMOJIS[Math.floor(Math.random() * DEVICE_EMOJIS.length)]
-  const randomWord1 = words.getWord(Math.floor(Math.random() * wordlistSize))
-  const randomWord2 = words.getWord(Math.floor(Math.random() * wordlistSize))
+  const randomValues = new Uint32Array(3)
+  window.crypto.getRandomValues(randomValues)
+
+  const randomEmoji = DEVICE_EMOJIS[randomValues[0] % DEVICE_EMOJIS.length]
+  const randomWord1 = words.getWord(randomValues[1] % wordlistSize)
+  const randomWord2 = words.getWord(randomValues[2] % wordlistSize)
 
   return `${randomEmoji} ${randomWord1} ${randomWord2}`
 }
