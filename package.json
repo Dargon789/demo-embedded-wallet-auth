@@ -16,7 +16,7 @@
     "postinstall": "(cp -n .env.example .env) || echo already exists"
   },
   "dependencies": {
-    "0xsequence": "2.2.4",
+    "0xsequence": "2.2.14",
     "@0xsequence/indexer": "2.2.13",
     "@0xsequence/network": "2.2.4",
     "@0xsequence/waas": "2.2.4",
