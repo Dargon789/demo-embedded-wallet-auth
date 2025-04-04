@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "0xsequence": "2.2.14",
-    "@0xsequence/indexer": "2.2.13",
+    "@0xsequence/indexer": "2.2.14",
     "@0xsequence/network": "2.2.4",
     "@0xsequence/waas": "2.2.14",
     "@0xsequence/design-system": "2.0.10",
