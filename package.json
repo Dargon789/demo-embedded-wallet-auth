@@ -19,7 +19,7 @@
     "0xsequence": "2.2.14",
     "@0xsequence/indexer": "2.2.14",
     "@0xsequence/network": "2.2.4",
-    "@0xsequence/waas": "2.2.14",
+    "@0xsequence/waas": "2.3.12",
     "@0xsequence/design-system": "2.1.12",
     "@react-oauth/google": "^0.12.1",
     "@stytch/react": "^19.1.0",
